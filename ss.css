@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+  }
+  
+  * a {
+    text-decoration: none;
+  }
+  
+  * li {
+    list-style: none;
+  }
+  
+  .container {
+    min-height: 120vh;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  
+  .navBar {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    height: 15vh;
+  }
+  
+  .navBar ul {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navBar ul li {
+    padding: 0 25px;
+  }
+  
+  .navBar a {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+  }
+   
+  .navBar h5 {  
+    color: #ffd129;
+    
+  }
+  
+  .navBar .logo a {
+    font-size: 2.3rem;
+    color: #fff;
+  }
+  
+  ul li {
+    display: inline-block;
+    position: relative;
+  
+  }
+  
+  ul li a {
+    display: block;
+    padding: 8px 12px;
+    color: #fff;
+  
+  
+  }
+  
+  
+  ul li ul.dropdown li {
+    display: none;
+    /* ซ่อนรายการใน dropdown เริ่มต้น */
+    white-space: nowrap;
+  
+  }
+  
+  ul li ul.dropdown {
+    background: rgba(80, 80, 80, 0.5);
+    width: auto;
+    /* ปรับให้ขนาดความยาวของ dropdown ขึ้นอยู่กับขนาดของเนื้อหา */
+    position: absolute;
+    z-index: 999;
+    left: 50%;
+    /* ตรงกลางแนวนอน */
+    transform: translate(-50%);
+    /* จัดให้ตรงกลางทั้งแนวตั้งและแนวนอน */
+    display: none;
+  }
+  
+  ul li:hover ul.dropdown li {
+    display: block;
+    /* แสดงรายการเมื่อ hover บนรายการหลัก */
+  }
+  
+  ul li:hover ul.dropdown {
+    display: block;
+    /* แสดง dropdown เมื่อ hover บนรายการหลัก */
+  }
+  
+  .dropdown span {
+    font-size: 12px;
+  }
+  
+  .dropdown li a {
+    font-size: 12px;
+  }
+  
+  .star-container {
+    text-align: left;
+    /* จัดให้ไอคอนดาวชิดซ้าย */
+  }
+  
+  .star {
+    color: #ffc107;
+    /* สีของดาว */
+    font-size: 20px;
+    /* ขนาดของไอคอนดาว */
+  }
+  
+  
+  .search-container {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: -50px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.6);
+    /* เปลี่ยนสีพื้นหลังเป็นสีโปร่งใส */
+  }
+  
+  .search-container input[type="text"] {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: transparent;
+    /* เปลี่ยนสีพื้นหลังให้โปร่งใส */
+  }
+  
+  .search-container button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 12px;
+    border: none;
+    color: #000000;
+    border-radius: 0 4px 4px 0;
+    background-color: transparent;
+    /* เปลี่ยนสีพื้นหลังให้โปร่งใส */
+  }
+  
+  .search-container button:hover {
+    background: #c6c6c6;
+  }
+  
+  .search-container input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  
+  
+  /*เนื้อหา*/
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+  }
+  
+  .kus {
+    color: #fff;
+    padding: 25px;
+  }
+  
+  
+ 
+  
+  .kus h2 {
+    font-size: 2rem;
+    letter-spacing: 2.8px;
+  }
+  
+  .text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .txt h1 {
+    font-size: 7rem;
+  }
+  
+  .kus p {
+    opacity: 0.4;
+  }
+  
+  .tnx h2 i {
+    color: #fd7e13;
+  }
+  
+  
+  /*หน้า from-login*/
+  
+  .container-login{
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .container-login h1{
+    text-align: center;
+    margin-bottom: 20px;
+  
+
+  }
+  .container-login form{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 360px;
+  }
+  
+  .input-group input::placeholder {
+    color: #999;
+  }
+  
+  .container-login .button-group {
+    text-align: center;
+}
+
+.container-login .button-group input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-login .button-group input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.container-login .error,
+.container-login .success {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container-login .error {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.container-login .success {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.container-login a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+.container-login a:hover {
+    text-decoration: underline;
+}
+  
+  .button-group a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+    margin: 12px;
+  }
+  
+  
+  .button-group a:hover {
+    color: #0056b3;
+  }
+  
+
+  /* หน้าแสดงข้อมูล*/
+  .container-user {
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-user h1 {
+    margin-top: 40px;
+    color: #ffffff;
+    width: 100%;
+}
+
+.accommodation {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: calc(50% - 20px);
+    background-color: rgba(255, 255, 255, 0.6);
+    box-sizing: border-box;
+}
+
+.accommodation p {
+    margin-bottom: 5px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.accommodation img {
+  border-radius: 8px;
+}
+
+/*แสดงข้อมูลของหน้าแอดมิน*/
+
+.container-table {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff; /* สีพื้นหลังของตาราง */
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+ 
+}
+
+.styled-table th, .styled-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd; /* เส้นขอบระหว่างแถว */
+}
+
+.styled-table th {
+  background-color: #f2f2f2; /* สีพื้นหลังส่วนหัวตาราง */
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* สีพื้นหลังของแถวคู่ */
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f5f5f5; /* สีพื้นหลังของแถวเมื่อโฮเวอร์ */
+}
+
+.styled-table img {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 5px;
+}
+
+
+
+/*หน้าแสดงหvพักของ user*/

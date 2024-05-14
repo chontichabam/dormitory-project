@@ -1,0 +1,251 @@
+header, nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header {
+  background-color: cadetblue;
+
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+}
+
+nav {
+  background-color: #42705e;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+
+  /*หน้าเพิ่มข้อมูลขอแอดมิน*/
+
+  .input-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 360px;
+  }
+
+  .input-group textarea::placeholder {
+    color: #999;
+  }
+
+
+
+  .input-group select {
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    width: 700px;
+  }
+
+
+  .container-login {
+    max-width: 800px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    border-radius: 2px;
+
+  }
+
+  .container-login h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+
+
+  }
+
+  .container-login form {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+
+  .input-group {
+    margin-bottom: 5px;
+  }
+
+  .input-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 700px;
+  }
+
+  .input-group input::placeholder {
+    color: #999;
+  }
+
+  .container-login .button-group {
+    text-align: center;
+  }
+
+  .container-login .button-group input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #45a049;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .container-login .button-group input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .container-login .error,
+  .container-login .success {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .container-login .error {
+    background-color: #f44336;
+    color: #fff;
+  }
+
+  .container-login .success {
+    background-color: #45a049;
+    color: #fff;
+  }
+
+  .container-login label {
+    font-size: 12px;
+  }
+
+  .container-login a:hover {
+    text-decoration: underline;
+  }
+
+  .button-group a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+    margin: 12px;
+  }
+
+
+  .button-group a:hover {
+    color: #0056b3;
+  }
+
+
+  /*ตาราง*/
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #a0a0a0;
+}
+
+.styled-table thead {
+  background-color: cadetblue;
+}
+
+.styled-table th, .styled-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.styled-table th {
+  border-right: 1px solid #ddd; 
+}
+
+.styled-table td {
+  border-right: 1px solid #ddd; 
+}
+
+
+
+
+.btn-d{
+  display: inline-block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #000000;
+
+  background-color: #cc5148;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #333;
+
+  background-color: #e3c666;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #f4f4f4;
+}
+
+
+/*หน้าประเภท*/
+
+.container-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+
+}
+
+.card {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body img {
+  width: 260px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.card-body h3 {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #333;
+}
